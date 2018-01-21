@@ -1,5 +1,5 @@
 CS 124 Programming Problem Workflow
------------------------------------
+===================================
 
 ## Introduction
 
@@ -27,7 +27,22 @@ python3 test-submission.py <submission>
 
 If the submission is in Python, then `<submission>` is just the Python file. For
 Java, it's the generated `class` file. Any executable will also work (such as a
-C `.out` file).
+C `.out` file). This prints out something like,
+
+```
+Running 2 tests on submission.out
+
+. | Correct output
+X | Incorrect output
+? | No solution to check against
+! | Timed out
+
+X tests/input1.txt (9 ms)
+? tests/input2.txt (6 ms)
+
+Output of tests/input1.txt
+6
+```
 
 Note that the output times are sensitive to the computer being run on, and carry
 some overhead from the Python script, thus, they can only be used as rough
