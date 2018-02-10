@@ -84,6 +84,6 @@ editor to make your code. If you're using Sublime, you can type `Command-B`,
 and then click on "Make" to the same effect. Most other text editors have
 similar functionality.
 
-![making in sublime](making-in-sublime.png)
+![making in Sublime](making-in-sublime.png)
 
-
+![making in Vim](making-in-vim.png)
