@@ -58,4 +58,32 @@ distribution in which `python3` runs Python 3.6, and `Python` runs Python 2.7.
 
 ## Optimizing through makefile
 
+What we have is already very automized, running all our tests at once and
+telling us how we're doing. It's a bit of a pain to change from a text-editor to
+the terminal to possibly compile our code and run the test running code. A way
+to automize this even further is through the use of a makefile. We can write,
+
+```
+all: submission.c test-submission.py
+	gcc -O2 submission.c -lm -std=c99 -o submission.out
+	python3 test-submission.py submission.out
+```
+
+in our makefile. Makefiles are generally used for compiling code with
+dependencies, but for our purposes, they can also be used to run all our tests.
+
+We could run the compile step and the testing step at once by just typing
+
+```
+make all
+```
+
+into the Terminal. We can also, however, integrate this with our text editor.
+For instance, if you're using Vim, you can type `:make` right from the text
+editor to make your code. If you're using Sublime, you can type `Command-B`,
+and then click on "Make" to the same effect. Most other text editors have
+similar functionality.
+
+![making in sublime](making-in-sublime.png)
+
 
