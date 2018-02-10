@@ -77,7 +77,7 @@ if __name__ == '__main__':
     for input_file in glob('tests/input*'):
         tests.append(TestCode(f_name, input_file))
 
-    print('Running %i tests on %s\n' % (len(tests), f_name))
+    print('Running %i tests on %s...\n' % (len(tests), f_name))
     print('. | Correct output')
     print('X | Incorrect output')
     print('? | No solution to check against')
@@ -88,7 +88,7 @@ if __name__ == '__main__':
         print(test)
 
     for test in tests:
-        if test.status == 'Incorrect':
+        if test.status in ['Incorrect', 'Ran']:
             print()
             print('Output of %s' % test.input_file)
             print(test.output)
