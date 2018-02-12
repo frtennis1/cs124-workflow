@@ -31,9 +31,9 @@ To run the tests, run
 python3 test-submission.py <submission>
 ```
 
-If the submission is in Python, then `<submission>` is just the Python file. For
-Java, it's the generated `class` file. Any executable will also work (such as a
-C `.out` file). This prints out something like,
+If the submission is in Python 2.7, then `<submission>` is just the Python file.
+For Java, it's the generated `class` file. Any executable will also work (such
+as a C `.out` file). This prints out something like,
 
 ```
 . | Correct output
@@ -56,7 +56,9 @@ correct. Note that the output times are sensitive to the computer being run on,
 and carry some overhead from the Python script. Thus, they can only be used as
 rough estimates. In order to get the timeouts to work in a simple fashion, the
 testing script was written in Python 3.6. This script is meant to work in a
-distribution in which `python3` runs Python 3.6, and `Python` runs Python 2.7. 
+distribution in which `python3` runs Python 3.6, and `Python` runs Python 2.7.
+Note that even though `test-submission.py` is written in Python 3.6, the
+submission file that it tests is going to be run as Python 2.7.
 
 ## Optimizing through makefile
 
