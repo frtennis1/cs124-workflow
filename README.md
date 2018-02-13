@@ -7,6 +7,18 @@ This repo grew out of a desire to optimize the CS 124 testing workflow. It
 consists of a main script that runs tests as well as some notes on setting up
 the workflow.
 
+We also have OS- and language-specific tips for generating and using test data
+in their respective folders. Check out:
+
+* [Windows](windows)
+* [Mac/Linux](linux)
+* [Python](python)
+* [Java](java)
+* [C++](cpp)
+
+Student contributions welcome! Feel free to PR or post on Piazza with any suggestions.
+
+
 ## Setting-up
 
 Put input files to be tested in the `tests/` directory. These can take the form
