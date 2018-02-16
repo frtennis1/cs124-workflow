@@ -15,6 +15,7 @@ in their respective folders. Check out:
 * [Python](python)
 * [Java](java)
 * [C++](cpp)
+* [C](c)
 
 Student contributions welcome! Feel free to PR or post on Piazza with any suggestions.
 
